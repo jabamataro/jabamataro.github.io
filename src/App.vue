@@ -29,10 +29,13 @@
       <v-toolbar-title>
         Carl's Builders
       </v-toolbar-title>
+      <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-btn class="mt-0" flat icon>
-          
-        </v-btn>
+        <v-flex class="mt-2">
+            <v-btn flat icon>
+              <v-icon>notifications</v-icon>
+            </v-btn>
+          </v-flex>
       </v-toolbar-items>
     </v-toolbar>
   </v-app>
