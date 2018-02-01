@@ -1,8 +1,7 @@
 <template>
   <div>
       <p>
-          The Sign up Page
+          The Signin Page
       </p>
   </div>
 </template>
-
