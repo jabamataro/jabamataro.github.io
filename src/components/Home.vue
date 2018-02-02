@@ -9,9 +9,9 @@
           >
           <v-container fill-height fluid>
             <v-layout column align-center justify-center class="white--text">
-              <h1 class="white--text mb-2 display-3 text-xs-center">Carl's Builders</h1>
+              <h1 class="black--text mb-2 display-3 text-xs-center">Carl's Builders</h1>
               <div class="subheading mb-3 text-xs-center"></div>
-              <v-btn class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
+              <v-btn class="grey darken-2 mt-5" dark large href="/pre-made-themes">
                 Get Started
               </v-btn>
             </v-layout>
