@@ -1,7 +1,7 @@
 <template>
 <div id="app">
    <v-app dark>
-    <v-toolbar class="grey darken-1">
+    <v-toolbar class="grey darken-1" absolute scroll-off-screen scroll-target="#scrolled">
       <v-toolbar-title>
         <router-link to="/" tag="span" style="cursor: pointer">
           Carl's Builders
