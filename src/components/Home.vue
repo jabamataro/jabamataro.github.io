@@ -93,22 +93,7 @@
         </v-layout>
       </section>
 
-      <section>
-        <v-parallax :src="require('@/assets/bg.jpg')" height="380">
-          <v-layout column align-center justify-center>
-            <div class="headline white--text mb-3 text-xs-center">Web development has never been easier</div>
-            <em>Kick-start your application today</em>
-            <v-btn
-              class="blue lighten-2 mt-5"
-              dark
-              large
-              href="/pre-made-themes"
-            >
-              Get Started
-            </v-btn>
-          </v-layout>
-        </v-parallax>
-      </section>
+    
 
       <section>
         <v-container grid-list-xl>
@@ -165,20 +150,10 @@
         </v-container>
       </section>
 
-      <v-footer class="blue darken-2">
-        <v-layout row wrap align-center>
-          <v-flex xs12>
-            <div class="white--text ml-3">
-              Made with
-              <v-icon class="red--text">favorite</v-icon>
-              by <a class="white--text" >HAM</a>
-              for <a class="white--text" >Carl's Builders</a>
-            </div>
-          </v-flex>
-        </v-layout>
-      </v-footer>
+      
     </v-content>
 </template>
+
 <script>
 document.title = 'Home'
 export default {
