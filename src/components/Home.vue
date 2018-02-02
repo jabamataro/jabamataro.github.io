@@ -1,17 +1,23 @@
 <template>
-
   <v-content>
     <section>
-      <v-parallax :src="require('@/assets/bg.jpg')" height="600">
-        <v-layout column align-center justify-center class="white--text">
-          <!-- <img src="assets/vuetify.png" alt="Vuetify.js" height="200"> -->
-          <h1 class="white--text mb-2 display-1 text-xs-center">CARL'S BUILDERS</h1>
-          <div class="subheading mb-3 text-xs-center"></div>
-          <v-btn class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
-            Get Started
-          </v-btn>
-        </v-layout>
-      </v-parallax>
+      <v-card flat style="height:80vh">
+        <v-card-media
+          class="white--text"
+          height="100%"
+          :src="require('@/assets/bg.jpg')"
+          >
+          <v-container fill-height fluid>
+            <v-layout column align-center justify-center class="white--text">
+              <h1 class="white--text mb-2 display-3 text-xs-center">Carl's Builders</h1>
+              <div class="subheading mb-3 text-xs-center"></div>
+              <v-btn class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
+                Get Started
+              </v-btn>
+            </v-layout>
+          </v-container>
+        </v-card-media>
+      </v-card>
     </section>
 
     <section >
@@ -79,15 +85,23 @@
     </section>
 
     <section>
-      <v-parallax :src="require('@/assets/bg.jpg')" height="380">
-        <v-layout column align-center justify-center>
-          <div class="headline white--text mb-3 text-xs-center">Web development has never been easier</div>
+      <v-card flat style="height:80vh">
+        <v-card-media
+          class="white--text"
+          height="100%"
+          :src="require('@/assets/bg.jpg')"
+          >
+          <v-container fill-height fluid>
+            <v-layout column align-center justify-center class="white--text">
+              <div class="headline white--text mb-3 text-xs-center">Web development has never been easier</div>
           <em>Kick-start your application today</em>
           <v-btn class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
             Get Started
           </v-btn>
-        </v-layout>
-      </v-parallax>
+            </v-layout>
+          </v-container>
+        </v-card-media>
+      </v-card>
     </section>
 
     <section>
@@ -161,6 +175,12 @@
     </v-footer>
   </v-content>
 </template>
+<style>
+  .parallax__image {
+    height: auto;
+    width: 100%;
+  }
+</style>
 <script>
   document.title = 'Home'
   export default {}

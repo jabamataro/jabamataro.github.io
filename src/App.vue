@@ -1,7 +1,7 @@
 <template>
 <div id="app">
-   <v-app dark>
-    <v-toolbar class="grey darken-1" absolute scroll-off-screen scroll-target="#scrolled">
+   <v-app>
+    <v-toolbar :manual-scroll="visible" dense fixed flat >
       <v-toolbar-title>
         <router-link to="/" tag="span" style="cursor: pointer">
           Carl's Builders
@@ -25,11 +25,27 @@
   export default {
     data () {
       return {
+        visible: true,
         menuItems: [
           { icon: 'face', title: 'Sign up', link: '/signup' },
           { icon: 'lock_open', title: 'Sign in', link: '/signin' }
         ]
       }
+    },
+    methods: {
+      onScroll (event) {
+        if (window.pageYOffset === 0) {
+          this.visible = true
+        } else if (window.pageYOffset > 100) {
+          this.visible = false
+        }
+      }
+    },
+    created () {
+      window.addEventListener('scroll', this.onScroll)
+    },
+    destroyed () {
+      window.removeEventListener('scroll', this.onScroll)
     }
   }
  </script>
